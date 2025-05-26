@@ -1,0 +1,16 @@
+require('dotenv').config()
+
+const ENV = {
+    DLP_CONTRACT_ADDRESS: process.env.DLP_CONTRACT_ADDRESS,
+    REGISTRATION_CONTRACT_ADDRESS: process.env.REGISTRATION_CONTRACT_ADDRESS,
+    RPC_URL: process.env.RPC_URL,
+    ADMIN_WALLET_ADDRESS: process.env.ADMIN_WALLET_ADDRESS,
+    ADMIN_WALLET_PRIVATE_KEY: process.env.ADMIN_WALLET_PRIVATE_KEY,
+    PROOF_INDEX: process.env.PROOF_INDEX,
+    BATCH_SIZE: process.env.BATCH_SIZE,
+    DELAY_BETWEEN_BATCHES: process.env.DELAY_BETWEEN_BATCHES,
+    START_FILE_ID: process.env.START_FILE_ID,
+    END_FILE_ID: process.env.END_FILE_ID,
+}
+
+module.exports = { ENV };
